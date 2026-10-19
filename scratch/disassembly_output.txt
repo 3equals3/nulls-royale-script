@@ -1,0 +1,1864 @@
+MODULE: atom:"/cr-new-epoch.js"
+Total functions: 37
+
+================================================================================
+FUNCTION [0] atom:null
+  file offset:        2056 (0x0808)
+  js_mode:            0x0602
+  has_prototype:      1
+  arg_count:          0
+  var_count:          0
+  defined_arg_count:  0
+  stack_size:         2
+  closure_var_count:  2
+  cpool_count:        0
+  byte_code_len:      13
+  bytecode offset:    2077 (0x081d)
+  cpool offset:       2094 (0x082e)
+  closure_vars:
+    [0] atom:"e" (var_idx=0, flags=0x03)
+    [1] atom:"t" (var_idx=1, flags=0x03)
+  bytecode disassembly:
+    0000: OP_get_var_ref0
+    0001: OP_dup
+    0002: OP_if_false8         000b (offset +7)
+    0004: OP_drop
+    0005: OP_get_var_ref0
+    0006: OP_push_0
+    0007: OP_set_var_ref0
+    0008: OP_call1
+    0009: OP_set_var_ref1
+    000a: OP_drop
+    000b: OP_get_var_ref1
+    000c: OP_return
+
+================================================================================
+FUNCTION [1] atom:null
+  file offset:        2026 (0x07ea)
+  js_mode:            0x0602
+  has_prototype:      1
+  arg_count:          2
+  var_count:          0
+  defined_arg_count:  2
+  stack_size:         1
+  closure_var_count:  0
+  cpool_count:        1
+  byte_code_len:      3
+  bytecode offset:    2049 (0x0801)
+  cpool offset:       2056 (0x0808)
+  cpool entries:
+    [0] <func atom:null at offset 0x0808>
+  bytecode disassembly:
+    0000: OP_fclosure8         cpool[0] (<func atom:null>)
+    0002: OP_return
+
+================================================================================
+FUNCTION [2] atom:null
+  file offset:        2124 (0x084c)
+  js_mode:            0x0602
+  has_prototype:      1
+  arg_count:          0
+  var_count:          0
+  defined_arg_count:  0
+  stack_size:         3
+  closure_var_count:  2
+  cpool_count:        0
+  byte_code_len:      29
+  bytecode offset:    2145 (0x0861)
+  cpool offset:       2178 (0x0882)
+  closure_vars:
+    [0] atom:"t" (var_idx=1, flags=0x03)
+    [1] atom:"e" (var_idx=0, flags=0x03)
+  bytecode disassembly:
+    0000: OP_get_var_ref0
+    0001: OP_dup
+    0002: OP_if_true8          0016 (offset +18)
+    0004: OP_drop
+    0005: OP_get_var_ref1
+    0006: OP_object
+    0007: OP_object
+    0008: OP_define_field      atom:"exports"
+    000d: OP_set_var_ref0
+    000e: OP_get_field         atom:"exports"
+    0013: OP_get_var_ref0
+    0014: OP_call2
+    0015: OP_drop
+    0016: OP_get_var_ref0
+    0017: OP_get_field         atom:"exports"
+    001c: OP_return
+
+================================================================================
+FUNCTION [3] atom:null
+  file offset:        2094 (0x082e)
+  js_mode:            0x0602
+  has_prototype:      1
+  arg_count:          2
+  var_count:          0
+  defined_arg_count:  2
+  stack_size:         1
+  closure_var_count:  0
+  cpool_count:        1
+  byte_code_len:      3
+  bytecode offset:    2117 (0x0845)
+  cpool offset:       2124 (0x084c)
+  cpool entries:
+    [0] <func atom:null at offset 0x084c>
+  bytecode disassembly:
+    0000: OP_fclosure8         cpool[0] (<func atom:null>)
+    0002: OP_return
+
+================================================================================
+FUNCTION [4] atom:null
+  file offset:        2178 (0x0882)
+  js_mode:            0x0602
+  has_prototype:      1
+  arg_count:          0
+  var_count:          0
+  defined_arg_count:  0
+  stack_size:         0
+  closure_var_count:  0
+  cpool_count:        0
+  byte_code_len:      1
+  bytecode offset:    2191 (0x088f)
+  cpool offset:       2196 (0x0894)
+  bytecode disassembly:
+    0000: OP_return_undef
+
+================================================================================
+FUNCTION [5] atom:null
+  file offset:        2245 (0x08c5)
+  js_mode:            0x0643
+  has_prototype:      1
+  arg_count:          2
+  var_count:          0
+  defined_arg_count:  2
+  stack_size:         2
+  closure_var_count:  0
+  cpool_count:        0
+  byte_code_len:      22
+  bytecode offset:    2268 (0x08dc)
+  cpool offset:       2294 (0x08f6)
+  bytecode disassembly:
+    0000: OP_get_var           atom:"Process"
+    0005: OP_get_field         atom:"arch"
+    000a: OP_push_atom_value   atom:"arm"
+    000f: OP_eq
+    0010: OP_if_false8         0015 (offset +3)
+    0012: OP_get_arg0
+    0013: OP_return
+    0014: OP_get_arg1
+    0015: OP_return
+
+================================================================================
+FUNCTION [6] atom:null
+  file offset:        2294 (0x08f6)
+  js_mode:            0x0643
+  has_prototype:      1
+  arg_count:          2
+  var_count:          1
+  defined_arg_count:  2
+  stack_size:         2
+  closure_var_count:  0
+  cpool_count:        0
+  byte_code_len:      50
+  bytecode offset:    2322 (0x0912)
+  cpool offset:       2376 (0x0948)
+  bytecode disassembly:
+    0000: OP_set_loc_uninitialized loc_0
+    0003: OP_get_arg0
+    0004: OP_typeof_is_function
+    0005: OP_dup
+    0006: OP_if_true8          000c (offset +4)
+    0008: OP_drop
+    0009: OP_get_arg1
+    000a: OP_typeof_is_function
+    000b: OP_put_loc0
+    000c: OP_get_var           atom:"Process"
+    0011: OP_get_field         atom:"arch"
+    0016: OP_push_atom_value   atom:"arm64"
+    001b: OP_strict_eq
+    001c: OP_if_false8         0029 (offset +11)
+    001e: OP_get_loc_check     loc_0
+    0021: OP_if_false8         0027 (offset +4)
+    0023: OP_get_arg0
+    0024: OP_call0
+    0025: OP_return
+    0026: OP_get_arg0
+    0027: OP_return
+    0028: OP_get_loc_check     loc_0
+    002b: OP_if_false8         0031 (offset +4)
+    002d: OP_get_arg1
+    002e: OP_call0
+    002f: OP_return
+    0030: OP_get_arg1
+    0031: OP_return
+
+================================================================================
+FUNCTION [7] atom:null
+  file offset:        2196 (0x0894)
+  js_mode:            0x0602
+  has_prototype:      1
+  arg_count:          0
+  var_count:          0
+  defined_arg_count:  0
+  stack_size:         2
+  closure_var_count:  1
+  cpool_count:        2
+  byte_code_len:      28
+  bytecode offset:    2213 (0x08a5)
+  cpool offset:       2245 (0x08c5)
+  closure_vars:
+    [0] atom:"_" (var_idx=2, flags=0x00)
+  cpool entries:
+    [0] <func atom:null at offset 0x08c5>
+    [1] <func atom:null at offset 0x08f6>
+  bytecode disassembly:
+    0000: OP_get_var_ref0
+    0001: OP_call0
+    0002: OP_drop
+    0003: OP_get_var           atom:<predef_112>
+    0008: OP_fclosure8         cpool[0] (<func atom:null>)
+    000a: OP_put_field         atom:"$arch"
+    000f: OP_get_var           atom:<predef_112>
+    0014: OP_fclosure8         cpool[1] (<func atom:null>)
+    0016: OP_put_field         atom:"$armv8_armv7"
+    001b: OP_return_undef
+
+================================================================================
+FUNCTION [8] atom:null
+  file offset:        2739 (0x0ab3)
+  js_mode:            0x0643
+  has_prototype:      1
+  arg_count:          1
+  var_count:          0
+  defined_arg_count:  1
+  stack_size:         4
+  closure_var_count:  0
+  cpool_count:        0
+  byte_code_len:      19
+  bytecode offset:    2757 (0x0ac5)
+  cpool offset:       2780 (0x0adc)
+  bytecode disassembly:
+    0000: OP_get_arg0
+    0001: OP_get_var           atom:"$armv8_armv7"
+    0006: OP_push_4
+    0007: OP_push_7
+    0008: OP_call2
+    0009: OP_to_propkey2
+    000a: OP_get_var           atom:"ptr"
+    000f: OP_push_1
+    0010: OP_call1
+    0011: OP_put_array_el
+    0012: OP_return_undef
+
+================================================================================
+FUNCTION [9] atom:null
+  file offset:        2780 (0x0adc)
+  js_mode:            0x0643
+  has_prototype:      1
+  arg_count:          0
+  var_count:          0
+  defined_arg_count:  0
+  stack_size:         3
+  closure_var_count:  0
+  cpool_count:        0
+  byte_code_len:      19
+  bytecode offset:    2793 (0x0ae9)
+  cpool offset:       2816 (0x0b00)
+  bytecode disassembly:
+    0000: OP_get_var           atom:"console"
+    0005: OP_get_field2        atom:"log"
+    000a: OP_push_atom_value   atom:"bad review call"
+    000f: OP_call_method       argc=1
+    0012: OP_return_undef
+
+================================================================================
+FUNCTION [10] atom:null
+  file offset:        2816 (0x0b00)
+  js_mode:            0x0643
+  has_prototype:      1
+  arg_count:          0
+  var_count:          0
+  defined_arg_count:  0
+  stack_size:         3
+  closure_var_count:  3
+  cpool_count:        0
+  byte_code_len:      46
+  bytecode offset:    2841 (0x0b19)
+  cpool offset:       2891 (0x0b4b)
+  closure_vars:
+    [0] atom:"i" (var_idx=4, flags=0x09)
+    [1] atom:"n" (var_idx=1, flags=0x09)
+    [2] atom:"o" (var_idx=3, flags=0x09)
+  bytecode disassembly:
+    0000: OP_get_var_ref_check var_ref_0 (atom:"i")
+    0003: OP_get_field2        atom:"detach"
+    0008: OP_call_method       argc=0
+    000b: OP_drop
+    000c: OP_get_var           atom:"Interceptor"
+    0011: OP_get_field2        atom:"revert"
+    0016: OP_get_var_ref_check var_ref_1 (atom:"n")
+    0019: OP_call_method       argc=1
+    001c: OP_drop
+    001d: OP_get_var           atom:"Interceptor"
+    0022: OP_get_field2        atom:"revert"
+    0027: OP_get_var_ref_check var_ref_2 (atom:"o")
+    002a: OP_call_method       argc=1
+    002d: OP_return_undef
+
+================================================================================
+FUNCTION [11] atom:"v"
+  file offset:        2481 (0x09b1)
+  js_mode:            0x0643
+  has_prototype:      1
+  arg_count:          1
+  var_count:          5
+  defined_arg_count:  1
+  stack_size:         8
+  closure_var_count:  0
+  cpool_count:        3
+  byte_code_len:      209
+  bytecode offset:    2526 (0x09de)
+  cpool offset:       2739 (0x0ab3)
+  cpool entries:
+    [0] <func atom:null at offset 0x0ab3>
+    [1] <func atom:null at offset 0x0adc>
+    [2] <func atom:null at offset 0x0b00>
+  bytecode disassembly:
+    0000: OP_set_loc_uninitialized loc_4
+    0003: OP_set_loc_uninitialized loc_3
+    0006: OP_set_loc_uninitialized loc_2
+    0009: OP_set_loc_uninitialized loc_1
+    000c: OP_set_loc_uninitialized loc_0
+    000f: OP_get_arg0
+    0010: OP_get_field2        atom:<predef_106>
+    0015: OP_get_var           atom:"$armv8_armv7"
+    001a: OP_push_i32          18404192
+    001f: OP_push_i32          14322964
+    0024: OP_call2
+    0025: OP_call_method       argc=1
+    0028: OP_put_loc0
+    0029: OP_get_arg0
+    002a: OP_get_field2        atom:<predef_106>
+    002f: OP_get_var           atom:"$armv8_armv7"
+    0034: OP_push_i32          8851332
+    0039: OP_push_i32          4301260
+    003e: OP_call2
+    003f: OP_call_method       argc=1
+    0042: OP_put_loc1
+    0043: OP_get_arg0
+    0044: OP_get_field2        atom:<predef_106>
+    0049: OP_get_var           atom:"$armv8_armv7"
+    004e: OP_push_i32          18810848
+    0053: OP_push_i32          14777800
+    0058: OP_call2
+    0059: OP_call_method       argc=1
+    005c: OP_put_loc2
+    005d: OP_get_arg0
+    005e: OP_get_field2        atom:<predef_106>
+    0063: OP_get_var           atom:"$armv8_armv7"
+    0068: OP_push_i32          7721428
+    006d: OP_push_i32          2984168
+    0072: OP_call2
+    0073: OP_call_method       argc=1
+    0076: OP_put_loc3
+    0077: OP_get_var           atom:"Interceptor"
+    007c: OP_get_field2        atom:"attach"
+    0081: OP_get_loc_check     loc_0
+    0084: OP_fclosure8         cpool[0] (<func atom:null>)
+    0086: OP_call_method       argc=2
+    0089: OP_put_loc8          loc_4
+    008b: OP_get_var           atom:"Interceptor"
+    0090: OP_get_field2        atom:"replace"
+    0095: OP_get_loc_check     loc_1
+    0098: OP_get_loc_check     loc_2
+    009b: OP_call_method       argc=2
+    009e: OP_drop
+    009f: OP_get_var           atom:"Interceptor"
+    00a4: OP_get_field2        atom:"replace"
+    00a9: OP_get_loc_check     loc_3
+    00ac: OP_get_var           atom:"NativeCallback"
+    00b1: OP_dup
+    00b2: OP_fclosure8         cpool[1] (<func atom:null>)
+    00b4: OP_push_atom_value   atom:"int"
+    00b9: OP_array_from        argc=0
+    00bc: OP_call_constructor  argc=3
+    00bf: OP_call_method       argc=2
+    00c2: OP_drop
+    00c3: OP_object
+    00c4: OP_fclosure8         cpool[2] (<func atom:null>)
+    00c6: OP_set_name          atom:"revert"
+    00cb: OP_define_field      atom:"revert"
+    00d0: OP_return
+
+================================================================================
+FUNCTION [12] atom:null
+  file offset:        3181 (0x0c6d)
+  js_mode:            0x0643
+  has_prototype:      1
+  arg_count:          1
+  var_count:          6
+  defined_arg_count:  1
+  stack_size:         7
+  closure_var_count:  2
+  cpool_count:        0
+  byte_code_len:      388
+  bytecode offset:    3238 (0x0ca6)
+  cpool offset:       3630 (0x0e2e)
+  closure_vars:
+    [0] atom:"e" (var_idx=0, flags=0x03)
+    [1] atom:"n" (var_idx=1, flags=0x09)
+  bytecode disassembly:
+    0000: OP_get_arg0
+    0001: OP_push_0
+    0002: OP_get_array_el
+    0003: OP_get_field2        atom:"readUtf8String"
+    0008: OP_call_method       argc=0
+    000b: OP_push_atom_value   atom:"royale.server.dnull.xyz"
+    0010: OP_eq
+    0011: OP_if_false          0187 (offset +369)
+    0016: OP_set_loc_uninitialized loc_5
+    0019: OP_set_loc_uninitialized loc_4
+    001c: OP_set_loc_uninitialized loc_3
+    001f: OP_set_loc_uninitialized loc_2
+    0022: OP_set_loc_uninitialized loc_1
+    0025: OP_set_loc_uninitialized loc_0
+    0028: OP_get_var           atom:<predef_128>
+    002d: OP_get_field2        atom:"findExportByName"
+    0032: OP_push_atom_value   atom:"libwildcat.so"
+    0037: OP_push_atom_value   atom:"wildcat_js_request"
+    003c: OP_call_method       argc=2
+    003f: OP_put_loc0
+    0040: OP_null
+    0041: OP_put_loc1
+    0042: OP_get_loc_check     loc_0
+    0045: OP_dup
+    0046: OP_if_false8         008c (offset +68)
+    0048: OP_drop
+    0049: OP_get_loc_check     loc_0
+    004c: OP_get_field2        atom:"isNull"
+    0051: OP_call_method       argc=0
+    0054: OP_lnot
+    0055: OP_dup
+    0056: OP_if_false8         008c (offset +52)
+    0058: OP_drop
+    0059: OP_get_var           atom:"NativeFunction"
+    005e: OP_dup
+    005f: OP_get_loc_check     loc_0
+    0062: OP_push_atom_value   atom:"pointer"
+    0067: OP_push_atom_value   atom:"pointer"
+    006c: OP_push_atom_value   atom:"pointer"
+    0071: OP_push_atom_value   atom:"size_t"
+    0076: OP_array_from        argc=3
+    0079: OP_object
+    007a: OP_push_atom_value   atom:"propagate"
+    007f: OP_define_field      atom:"exceptions"
+    0084: OP_call_constructor  argc=4
+    0087: OP_dup
+    0088: OP_put_loc_check     loc_1
+    008b: OP_drop
+    008c: OP_object
+    008d: OP_push_atom_value   atom:"getHostnamePreference"
+    0092: OP_define_field      atom:"type"
+    0097: OP_put_loc2
+    0098: OP_get_var           atom:"Memory"
+    009d: OP_get_field2        atom:"allocUtf8String"
+    00a2: OP_get_var           atom:<predef_161>
+    00a7: OP_get_field2        atom:"stringify"
+    00ac: OP_get_loc_check     loc_2
+    00af: OP_call_method       argc=1
+    00b2: OP_call_method       argc=1
+    00b5: OP_put_loc3
+    00b6: OP_get_var           atom:"Memory"
+    00bb: OP_get_field2        atom:"alloc"
+    00c0: OP_push_i16          1024
+    00c3: OP_call_method       argc=1
+    00c6: OP_put_loc8          loc_4
+    00c8: OP_get_loc_check     loc_4
+    00cb: OP_get_field2        atom:"writeUtf8String"
+    00d0: OP_get_var           atom:<predef_161>
+    00d5: OP_get_field2        atom:"stringify"
+    00da: OP_object
+    00db: OP_get_var_ref0
+    00dc: OP_define_field      atom:"preferredHostname"
+    00e1: OP_push_i16          9339
+    00e4: OP_define_field      atom:"preferredPort"
+    00e9: OP_call_method       argc=1
+    00ec: OP_call_method       argc=1
+    00ef: OP_drop
+    00f0: OP_get_loc_check     loc_0
+    00f3: OP_dup
+    00f4: OP_if_false8         0115 (offset +31)
+    00f6: OP_drop
+    00f7: OP_get_loc_check     loc_0
+    00fa: OP_get_field2        atom:"isNull"
+    00ff: OP_call_method       argc=0
+    0102: OP_lnot
+    0103: OP_dup
+    0104: OP_if_false8         0115 (offset +15)
+    0106: OP_drop
+    0107: OP_get_loc_check     loc_1
+    010a: OP_get_loc_check     loc_3
+    010d: OP_get_loc_check     loc_4
+    0110: OP_push_i16          1024
+    0113: OP_call3
+    0114: OP_drop
+    0115: OP_get_loc_check     loc_4
+    0118: OP_get_field2        atom:<predef_106>
+    011d: OP_push_i16          1023
+    0120: OP_call_method       argc=1
+    0123: OP_get_field2        atom:"writeU8"
+    0128: OP_push_0
+    0129: OP_call_method       argc=1
+    012c: OP_drop
+    012d: OP_get_var           atom:<predef_161>
+    0132: OP_get_field2        atom:"parse"
+    0137: OP_get_loc_check     loc_4
+    013a: OP_get_field2        atom:"readUtf8String"
+    013f: OP_call_method       argc=0
+    0142: OP_call_method       argc=1
+    0145: OP_put_loc8          loc_5
+    0147: OP_get_arg0
+    0148: OP_push_0
+    0149: OP_get_array_el
+    014a: OP_get_field2        atom:"writeUtf8String"
+    014f: OP_get_loc_check     loc_5
+    0152: OP_get_field         atom:"preferredHostname"
+    0157: OP_call_method       argc=1
+    015a: OP_drop
+    015b: OP_get_loc_check     loc_5
+    015e: OP_get_field         atom:"preferredPort"
+    0163: OP_dup
+    0164: OP_put_var_ref_check var_ref_1 (atom:"n")
+    0167: OP_drop
+    0168: OP_get_var           atom:"console"
+    016d: OP_get_field2        atom:"log"
+    0172: OP_push_atom_value   atom:"preferredHostname:"
+    0177: OP_get_loc_check     loc_5
+    017a: OP_get_field         atom:"preferredHostname"
+    017f: OP_call_method       argc=2
+    0182: OP_drop
+    0183: OP_return_undef
+
+================================================================================
+FUNCTION [13] atom:null
+  file offset:        3630 (0x0e2e)
+  js_mode:            0x0643
+  has_prototype:      1
+  arg_count:          1
+  var_count:          1
+  defined_arg_count:  1
+  stack_size:         4
+  closure_var_count:  3
+  cpool_count:        0
+  byte_code_len:      88
+  bytecode offset:    3665 (0x0e51)
+  cpool offset:       3757 (0x0ead)
+  closure_vars:
+    [0] atom:"r" (var_idx=2, flags=0x09)
+    [1] atom:"o" (var_idx=3, flags=0x09)
+    [2] atom:"n" (var_idx=1, flags=0x09)
+  bytecode disassembly:
+    0000: OP_get_var_ref_check var_ref_0 (atom:"r")
+    0003: OP_get_arg0
+    0004: OP_push_1
+    0005: OP_get_array_el
+    0006: OP_get_field2        atom:<predef_106>
+    000b: OP_push_2
+    000c: OP_call_method       argc=1
+    000f: OP_get_field2        atom:"readU16"
+    0014: OP_call_method       argc=0
+    0017: OP_call1
+    0018: OP_push_i16          9339
+    001b: OP_eq
+    001c: OP_if_false8         0058 (offset +58)
+    001e: OP_set_loc_uninitialized loc_0
+    0021: OP_get_var_ref_check var_ref_1 (atom:"o")
+    0024: OP_get_var_ref_check var_ref_2 (atom:"n")
+    0027: OP_call1
+    0028: OP_put_loc0
+    0029: OP_get_arg0
+    002a: OP_push_1
+    002b: OP_get_array_el
+    002c: OP_get_field2        atom:<predef_106>
+    0031: OP_push_2
+    0032: OP_call_method       argc=1
+    0035: OP_get_field2        atom:"writeU16"
+    003a: OP_get_loc_check     loc_0
+    003d: OP_call_method       argc=1
+    0040: OP_drop
+    0041: OP_get_var           atom:"console"
+    0046: OP_get_field2        atom:"log"
+    004b: OP_push_atom_value   atom:"preferredPort:"
+    0050: OP_get_var_ref_check var_ref_2 (atom:"n")
+    0053: OP_call_method       argc=2
+    0056: OP_drop
+    0057: OP_return_undef
+
+================================================================================
+FUNCTION [14] atom:"E"
+  file offset:        2891 (0x0b4b)
+  js_mode:            0x0643
+  has_prototype:      1
+  arg_count:          1
+  var_count:          4
+  defined_arg_count:  1
+  stack_size:         7
+  closure_var_count:  2
+  cpool_count:        2
+  byte_code_len:      238
+  bytecode offset:    2939 (0x0b7b)
+  cpool offset:       3181 (0x0c6d)
+  closure_vars:
+    [0] atom:"h" (var_idx=0, flags=0x01)
+    [1] atom:"v" (var_idx=1, flags=0x01)
+  cpool entries:
+    [0] <func atom:null at offset 0x0c6d>
+    [1] <func atom:null at offset 0x0e2e>
+  bytecode disassembly:
+    0000: OP_set_loc_uninitialized loc_3
+    0003: OP_set_loc_uninitialized loc_2
+    0006: OP_set_loc_uninitialized loc_1
+    0009: OP_set_loc_uninitialized loc_0
+    000c: OP_get_var           atom:<predef_128>
+    0011: OP_get_field2        atom:"findBaseAddress"
+    0016: OP_push_atom_value   atom:"libg.so"
+    001b: OP_call_method       argc=1
+    001e: OP_put_loc0
+    001f: OP_get_var_ref0
+    0020: OP_get_var_ref1
+    0021: OP_get_loc_check     loc_0
+    0024: OP_call1
+    0025: OP_put_field         atom:"oth"
+    002a: OP_push_i16          9339
+    002d: OP_put_loc1
+    002e: OP_get_var           atom:"Interceptor"
+    0033: OP_get_field2        atom:"attach"
+    0038: OP_get_var           atom:<predef_128>
+    003d: OP_get_field2        atom:"findExportByName"
+    0042: OP_push_atom_value   atom:"libc.so"
+    0047: OP_push_atom_value   atom:"getaddrinfo"
+    004c: OP_call_method       argc=2
+    004f: OP_fclosure8         cpool[0] (<func atom:null>)
+    0051: OP_call_method       argc=2
+    0054: OP_drop
+    0055: OP_get_var           atom:"NativeFunction"
+    005a: OP_dup
+    005b: OP_get_var           atom:<predef_128>
+    0060: OP_get_field2        atom:"findExportByName"
+    0065: OP_push_atom_value   atom:"libc.so"
+    006a: OP_push_atom_value   atom:"ntohs"
+    006f: OP_call_method       argc=2
+    0072: OP_push_atom_value   atom:"uint16"
+    0077: OP_push_atom_value   atom:"uint16"
+    007c: OP_array_from        argc=1
+    007f: OP_object
+    0080: OP_push_atom_value   atom:"propagate"
+    0085: OP_define_field      atom:"exceptions"
+    008a: OP_call_constructor  argc=4
+    008d: OP_put_loc2
+    008e: OP_get_var           atom:"NativeFunction"
+    0093: OP_dup
+    0094: OP_get_var           atom:<predef_128>
+    0099: OP_get_field2        atom:"findExportByName"
+    009e: OP_push_atom_value   atom:"libc.so"
+    00a3: OP_push_atom_value   atom:"htons"
+    00a8: OP_call_method       argc=2
+    00ab: OP_push_atom_value   atom:"uint16"
+    00b0: OP_push_atom_value   atom:"uint16"
+    00b5: OP_array_from        argc=1
+    00b8: OP_object
+    00b9: OP_push_atom_value   atom:"propagate"
+    00be: OP_define_field      atom:"exceptions"
+    00c3: OP_call_constructor  argc=4
+    00c6: OP_put_loc3
+    00c7: OP_get_var           atom:"Interceptor"
+    00cc: OP_get_field2        atom:"attach"
+    00d1: OP_get_var           atom:<predef_128>
+    00d6: OP_get_field2        atom:"findExportByName"
+    00db: OP_push_atom_value   atom:"libc.so"
+    00e0: OP_push_atom_value   atom:"connect"
+    00e5: OP_call_method       argc=2
+    00e8: OP_fclosure8         cpool[1] (<func atom:null>)
+    00ea: OP_call_method       argc=2
+    00ed: OP_return_undef
+
+================================================================================
+FUNCTION [15] atom:null
+  file offset:        4410 (0x113a)
+  js_mode:            0x0643
+  has_prototype:      1
+  arg_count:          1
+  var_count:          0
+  defined_arg_count:  1
+  stack_size:         3
+  closure_var_count:  0
+  cpool_count:        0
+  byte_code_len:      19
+  bytecode offset:    4428 (0x114c)
+  cpool offset:       4451 (0x1163)
+  bytecode disassembly:
+    0000: OP_get_var           atom:"console"
+    0005: OP_get_field2        atom:"log"
+    000a: OP_push_atom_value   atom:"POLYFILL IMPL:__cxa_thread_atexit_impl: stub called!"
+    000f: OP_call_method       argc=1
+    0012: OP_return_undef
+
+================================================================================
+FUNCTION [16] atom:null
+  file offset:        4344 (0x10f8)
+  js_mode:            0x0642
+  has_prototype:      1
+  arg_count:          0
+  var_count:          1
+  defined_arg_count:  0
+  stack_size:         5
+  closure_var_count:  1
+  cpool_count:        1
+  byte_code_len:      40
+  bytecode offset:    4366 (0x110e)
+  cpool offset:       4410 (0x113a)
+  closure_vars:
+    [0] atom:"N" (var_idx=0, flags=0x00)
+  cpool entries:
+    [0] <func atom:null at offset 0x113a>
+  bytecode disassembly:
+    0000: OP_set_loc_uninitialized loc_0
+    0003: OP_get_var           atom:"NativeCallback"
+    0008: OP_dup
+    0009: OP_fclosure8         cpool[0] (<func atom:null>)
+    000b: OP_push_atom_value   atom:typeof
+    0010: OP_array_from        argc=0
+    0013: OP_call_constructor  argc=3
+    0016: OP_put_loc0
+    0017: OP_get_var_ref0
+    0018: OP_get_field2        atom:"push"
+    001d: OP_get_loc_check     loc_0
+    0020: OP_call_method       argc=1
+    0023: OP_drop
+    0024: OP_get_loc_check     loc_0
+    0027: OP_return
+
+================================================================================
+FUNCTION [17] atom:null
+  file offset:        4451 (0x1163)
+  js_mode:            0x0642
+  has_prototype:      1
+  arg_count:          0
+  var_count:          0
+  defined_arg_count:  0
+  stack_size:         4
+  closure_var_count:  0
+  cpool_count:        0
+  byte_code_len:      42
+  bytecode offset:    4464 (0x1170)
+  cpool offset:       4510 (0x119e)
+  bytecode disassembly:
+    0000: OP_get_var           atom:"console"
+    0005: OP_get_field2        atom:"log"
+    000a: OP_push_atom_value   atom:"__fwrite_chk polyfill needed. will use fwrite as polyfill"
+    000f: OP_call_method       argc=1
+    0012: OP_drop
+    0013: OP_get_var           atom:<predef_128>
+    0018: OP_get_field2        atom:"findExportByName"
+    001d: OP_push_atom_value   atom:"libc.so"
+    0022: OP_push_atom_value   atom:"fwrite"
+    0027: OP_tail_call_method  argc=2
+
+================================================================================
+FUNCTION [18] atom:null
+  file offset:        4510 (0x119e)
+  js_mode:            0x0642
+  has_prototype:      1
+  arg_count:          0
+  var_count:          0
+  defined_arg_count:  0
+  stack_size:         4
+  closure_var_count:  0
+  cpool_count:        0
+  byte_code_len:      42
+  bytecode offset:    4523 (0x11ab)
+  cpool offset:       4569 (0x11d9)
+  bytecode disassembly:
+    0000: OP_get_var           atom:"console"
+    0005: OP_get_field2        atom:"log"
+    000a: OP_push_atom_value   atom:"__gnu_strerror_r polyfill needed. will use strerror_r as polyfill"
+    000f: OP_call_method       argc=1
+    0012: OP_drop
+    0013: OP_get_var           atom:<predef_128>
+    0018: OP_get_field2        atom:"findExportByName"
+    001d: OP_push_atom_value   atom:"libc.so"
+    0022: OP_push_atom_value   atom:"strerror_r"
+    0027: OP_tail_call_method  argc=2
+
+================================================================================
+FUNCTION [19] atom:null
+  file offset:        4635 (0x121b)
+  js_mode:            0x0643
+  has_prototype:      1
+  arg_count:          1
+  var_count:          0
+  defined_arg_count:  1
+  stack_size:         3
+  closure_var_count:  0
+  cpool_count:        0
+  byte_code_len:      19
+  bytecode offset:    4653 (0x122d)
+  cpool offset:       4676 (0x1244)
+  bytecode disassembly:
+    0000: OP_get_var           atom:"console"
+    0005: OP_get_field2        atom:"log"
+    000a: OP_push_atom_value   atom:"POLYFILL IMPL:__register_atfork: stub called!"
+    000f: OP_call_method       argc=1
+    0012: OP_return_undef
+
+================================================================================
+FUNCTION [20] atom:null
+  file offset:        4569 (0x11d9)
+  js_mode:            0x0642
+  has_prototype:      1
+  arg_count:          0
+  var_count:          1
+  defined_arg_count:  0
+  stack_size:         5
+  closure_var_count:  1
+  cpool_count:        1
+  byte_code_len:      40
+  bytecode offset:    4591 (0x11ef)
+  cpool offset:       4635 (0x121b)
+  closure_vars:
+    [0] atom:"N" (var_idx=0, flags=0x00)
+  cpool entries:
+    [0] <func atom:null at offset 0x121b>
+  bytecode disassembly:
+    0000: OP_set_loc_uninitialized loc_0
+    0003: OP_get_var           atom:"NativeCallback"
+    0008: OP_dup
+    0009: OP_fclosure8         cpool[0] (<func atom:null>)
+    000b: OP_push_atom_value   atom:typeof
+    0010: OP_array_from        argc=0
+    0013: OP_call_constructor  argc=3
+    0016: OP_put_loc0
+    0017: OP_get_var_ref0
+    0018: OP_get_field2        atom:"push"
+    001d: OP_get_loc_check     loc_0
+    0020: OP_call_method       argc=1
+    0023: OP_drop
+    0024: OP_get_loc_check     loc_0
+    0027: OP_return
+
+================================================================================
+FUNCTION [21] atom:null
+  file offset:        4676 (0x1244)
+  js_mode:            0x0642
+  has_prototype:      1
+  arg_count:          0
+  var_count:          1
+  defined_arg_count:  0
+  stack_size:         4
+  closure_var_count:  0
+  cpool_count:        0
+  byte_code_len:      89
+  bytecode offset:    4694 (0x1256)
+  cpool offset:       4787 (0x12b3)
+  bytecode disassembly:
+    0000: OP_set_loc_uninitialized loc_0
+    0003: OP_get_var           atom:"console"
+    0008: OP_get_field2        atom:"log"
+    000d: OP_push_atom_value   atom:"stderr polyfill needed. will use __sF + 0xA8 as polyfill"
+    0012: OP_call_method       argc=1
+    0015: OP_drop
+    0016: OP_get_var           atom:<predef_128>
+    001b: OP_get_field2        atom:"findExportByName"
+    0020: OP_push_atom_value   atom:"libc.so"
+    0025: OP_push_atom_value   atom:"__sF"
+    002a: OP_call_method       argc=2
+    002d: OP_put_loc0
+    002e: OP_get_loc_check     loc_0
+    0031: OP_null
+    0032: OP_eq
+    0033: OP_dup
+    0034: OP_if_true8          0043 (offset +13)
+    0036: OP_drop
+    0037: OP_get_loc_check     loc_0
+    003a: OP_get_field2        atom:"isNull"
+    003f: OP_call_method       argc=0
+    0042: OP_if_false8         004b (offset +7)
+    0044: OP_get_var           atom:"NULL"
+    0049: OP_return
+    004a: OP_get_loc_check     loc_0
+    004d: OP_get_field2        atom:<predef_106>
+    0052: OP_push_i16          168
+    0055: OP_call_method       argc=1
+    0058: OP_return
+
+================================================================================
+FUNCTION [22] atom:"M"
+  file offset:        3757 (0x0ead)
+  js_mode:            0x0643
+  has_prototype:      1
+  arg_count:          0
+  var_count:          6
+  defined_arg_count:  0
+  stack_size:         7
+  closure_var_count:  1
+  cpool_count:        5
+  byte_code_len:      534
+  bytecode offset:    3806 (0x0ede)
+  cpool offset:       4344 (0x10f8)
+  closure_vars:
+    [0] atom:"N" (var_idx=3, flags=0x01)
+  cpool entries:
+    [0] <func atom:null at offset 0x10f8>
+    [1] <func atom:null at offset 0x1163>
+    [2] <func atom:null at offset 0x119e>
+    [3] <func atom:null at offset 0x11d9>
+    [4] <func atom:null at offset 0x1244>
+  bytecode disassembly:
+    0000: OP_set_loc_uninitialized loc_2
+    0003: OP_set_loc_uninitialized loc_1
+    0006: OP_set_loc_uninitialized loc_0
+    0009: OP_get_var           atom:<predef_128>
+    000e: OP_get_field2        atom:"findBaseAddress"
+    0013: OP_push_atom_value   atom:"libg.so"
+    0018: OP_call_method       argc=1
+    001b: OP_put_loc0
+    001c: OP_object
+    001d: OP_get_loc_check     loc_0
+    0020: OP_get_field2        atom:<predef_106>
+    0025: OP_get_var           atom:"$armv8_armv7"
+    002a: OP_push_i32          26122424
+    002f: OP_push_i32          21895092
+    0034: OP_call2
+    0035: OP_call_method       argc=1
+    0038: OP_define_field      atom:"__cxa_thread_atexit_impl"
+    003d: OP_get_loc_check     loc_0
+    0040: OP_get_field2        atom:<predef_106>
+    0045: OP_get_var           atom:"$armv8_armv7"
+    004a: OP_push_i32          26122480
+    004f: OP_push_i32          21895120
+    0054: OP_call2
+    0055: OP_call_method       argc=1
+    0058: OP_define_field      atom:"__fwrite_chk"
+    005d: OP_get_loc_check     loc_0
+    0060: OP_get_field2        atom:<predef_106>
+    0065: OP_get_var           atom:"$armv8_armv7"
+    006a: OP_push_i32          26123016
+    006f: OP_push_i32          21895404
+    0074: OP_call2
+    0075: OP_call_method       argc=1
+    0078: OP_define_field      atom:"__gnu_strerror_r"
+    007d: OP_get_loc_check     loc_0
+    0080: OP_get_field2        atom:<predef_106>
+    0085: OP_get_var           atom:"$armv8_armv7"
+    008a: OP_push_i32          26121032
+    008f: OP_push_i32          21894348
+    0094: OP_call2
+    0095: OP_call_method       argc=1
+    0098: OP_define_field      atom:"__register_atfork"
+    009d: OP_get_loc_check     loc_0
+    00a0: OP_get_field2        atom:<predef_106>
+    00a5: OP_get_var           atom:"$armv8_armv7"
+    00aa: OP_push_i32          26117328
+    00af: OP_push_i32          21892484
+    00b4: OP_call2
+    00b5: OP_call_method       argc=1
+    00b8: OP_define_field      atom:"stderr"
+    00bd: OP_put_loc1
+    00be: OP_object
+    00bf: OP_fclosure8         cpool[0] (<func atom:null>)
+    00c1: OP_set_name          atom:"__cxa_thread_atexit_impl"
+    00c6: OP_define_field      atom:"__cxa_thread_atexit_impl"
+    00cb: OP_fclosure8         cpool[1] (<func atom:null>)
+    00cd: OP_set_name          atom:"__fwrite_chk"
+    00d2: OP_define_field      atom:"__fwrite_chk"
+    00d7: OP_fclosure8         cpool[2] (<func atom:null>)
+    00d9: OP_set_name          atom:"__gnu_strerror_r"
+    00de: OP_define_field      atom:"__gnu_strerror_r"
+    00e3: OP_fclosure8         cpool[3] (<func atom:null>)
+    00e5: OP_set_name          atom:"__register_atfork"
+    00ea: OP_define_field      atom:"__register_atfork"
+    00ef: OP_fclosure8         cpool[4] (<func atom:null>)
+    00f1: OP_set_name          atom:"stderr"
+    00f6: OP_define_field      atom:"stderr"
+    00fb: OP_put_loc2
+    00fc: OP_set_loc_uninitialized loc_3
+    00ff: OP_get_loc_check     loc_1
+    0102: OP_for_in_start
+    0103: OP_goto16            01fd (offset +247)
+    0106: OP_put_loc3
+    0107: OP_set_loc_uninitialized loc_4
+    010a: OP_get_loc_check     loc_1
+    010d: OP_get_loc_check     loc_3
+    0110: OP_get_array_el
+    0111: OP_put_loc8          loc_4
+    0113: OP_get_loc_check     loc_4
+    0116: OP_get_field2        atom:"readPointer"
+    011b: OP_call_method       argc=0
+    011e: OP_get_field2        atom:"isNull"
+    0123: OP_call_method       argc=0
+    0126: OP_if_false          01ff (offset +212)
+    012b: OP_set_loc_uninitialized loc_5
+    012e: OP_get_var           atom:"console"
+    0133: OP_get_field2        atom:"log"
+    0138: OP_push_atom_value   atom:"NULL!"
+    013d: OP_get_loc_check     loc_3
+    0140: OP_call_method       argc=2
+    0143: OP_drop
+    0144: OP_get_loc_check     loc_2
+    0147: OP_get_loc_check     loc_3
+    014a: OP_get_array_el2
+    014b: OP_call_method       argc=0
+    014e: OP_put_loc8          loc_5
+    0150: OP_get_loc_check     loc_5
+    0153: OP_null
+    0154: OP_eq
+    0155: OP_dup
+    0156: OP_if_true8          0165 (offset +13)
+    0158: OP_drop
+    0159: OP_get_loc_check     loc_5
+    015c: OP_get_field2        atom:"isNull"
+    0161: OP_call_method       argc=0
+    0164: OP_if_false8         01af (offset +73)
+    0166: OP_get_var           atom:"console"
+    016b: OP_get_field2        atom:"log"
+    0170: OP_get_loc_check     loc_3
+    0173: OP_push_atom_value   atom:"polyfill is NULL!"
+    0178: OP_call_method       argc=2
+    017b: OP_drop
+    017c: OP_get_var           atom:"Memory"
+    0181: OP_get_field2        atom:"protect"
+    0186: OP_get_loc_check     loc_4
+    0189: OP_get_var           atom:"Process"
+    018e: OP_get_field         atom:"pointerSize"
+    0193: OP_push_atom_value   atom:"rw-"
+    0198: OP_call_method       argc=3
+    019b: OP_drop
+    019c: OP_get_loc_check     loc_4
+    019f: OP_get_field2        atom:"writePointer"
+    01a4: OP_get_var           atom:"NULL"
+    01a9: OP_call_method       argc=1
+    01ac: OP_goto8             01fb (offset +77)
+    01ae: OP_get_var           atom:"Memory"
+    01b3: OP_get_field2        atom:"protect"
+    01b8: OP_get_loc_check     loc_4
+    01bb: OP_get_var           atom:"Process"
+    01c0: OP_get_field         atom:"pointerSize"
+    01c5: OP_push_atom_value   atom:"rw-"
+    01ca: OP_call_method       argc=3
+    01cd: OP_drop
+    01ce: OP_get_loc_check     loc_4
+    01d1: OP_get_field2        atom:"writePointer"
+    01d6: OP_get_loc_check     loc_5
+    01d9: OP_call_method       argc=1
+    01dc: OP_drop
+    01dd: OP_get_var           atom:"console"
+    01e2: OP_get_field2        atom:"log"
+    01e7: OP_push_atom_value   atom:"installed polyfill"
+    01ec: OP_get_loc_check     loc_5
+    01ef: OP_push_atom_value   atom:"for:"
+    01f4: OP_get_loc_check     loc_3
+    01f7: OP_call_method       argc=4
+    01fa: OP_drop
+    01fb: OP_for_in_next
+    01fc: OP_if_false          010a (offset -247)
+    0201: OP_drop
+    0202: OP_drop
+    0203: OP_get_var           atom:"console"
+    0208: OP_get_field2        atom:"log"
+    020d: OP_push_atom_value   atom:<predef_107>
+    0212: OP_call_method       argc=1
+    0215: OP_return_undef
+
+================================================================================
+FUNCTION [23] atom:"P"
+  file offset:        4787 (0x12b3)
+  js_mode:            0x0643
+  has_prototype:      1
+  arg_count:          0
+  var_count:          13
+  defined_arg_count:  0
+  stack_size:         6
+  closure_var_count:  0
+  cpool_count:        0
+  byte_code_len:      414
+  bytecode offset:    4867 (0x1303)
+  cpool offset:       5289 (0x14a9)
+  bytecode disassembly:
+    0000: OP_set_loc_uninitialized loc_12
+    0003: OP_set_loc_uninitialized loc_11
+    0006: OP_set_loc_uninitialized loc_10
+    0009: OP_set_loc_uninitialized loc_9
+    000c: OP_set_loc_uninitialized loc_8
+    000f: OP_set_loc_uninitialized loc_7
+    0012: OP_set_loc_uninitialized loc_6
+    0015: OP_set_loc_uninitialized loc_5
+    0018: OP_set_loc_uninitialized loc_4
+    001b: OP_set_loc_uninitialized loc_3
+    001e: OP_set_loc_uninitialized loc_2
+    0021: OP_set_loc_uninitialized loc_1
+    0024: OP_set_loc_uninitialized loc_0
+    0027: OP_get_var           atom:<predef_128>
+    002c: OP_get_field2        atom:"findExportByName"
+    0031: OP_push_atom_value   atom:"libwildcat.so"
+    0036: OP_push_atom_value   atom:"wildcat_js_get_data_path"
+    003b: OP_call_method       argc=2
+    003e: OP_put_loc0
+    003f: OP_get_var           atom:<predef_128>
+    0044: OP_get_field2        atom:"findExportByName"
+    0049: OP_push_atom_value   atom:"libwildcat.so"
+    004e: OP_push_atom_value   atom:"wildcat_js_get_signed_script_size"
+    0053: OP_call_method       argc=2
+    0056: OP_put_loc1
+    0057: OP_get_var           atom:<predef_128>
+    005c: OP_get_field2        atom:"findExportByName"
+    0061: OP_push_atom_value   atom:"libwildcat.so"
+    0066: OP_push_atom_value   atom:"wildcat_js_get_signed_script"
+    006b: OP_call_method       argc=2
+    006e: OP_put_loc2
+    006f: OP_get_var           atom:"NativeFunction"
+    0074: OP_dup
+    0075: OP_get_loc_check     loc_0
+    0078: OP_push_atom_value   atom:"pointer"
+    007d: OP_array_from        argc=0
+    0080: OP_call_constructor  argc=3
+    0083: OP_put_loc3
+    0084: OP_get_var           atom:"NativeFunction"
+    0089: OP_dup
+    008a: OP_get_loc_check     loc_1
+    008d: OP_push_atom_value   atom:"size_t"
+    0092: OP_array_from        argc=0
+    0095: OP_call_constructor  argc=3
+    0098: OP_put_loc8          loc_4
+    009a: OP_get_var           atom:"NativeFunction"
+    009f: OP_dup
+    00a0: OP_get_loc_check     loc_2
+    00a3: OP_push_atom_value   atom:"pointer"
+    00a8: OP_array_from        argc=0
+    00ab: OP_call_constructor  argc=3
+    00ae: OP_put_loc8          loc_5
+    00b0: OP_get_loc_check     loc_3
+    00b3: OP_call0
+    00b4: OP_put_loc8          loc_6
+    00b6: OP_get_loc_check     loc_6
+    00b9: OP_get_field2        atom:"isNull"
+    00be: OP_call_method       argc=0
+    00c1: OP_if_false8         00c5 (offset +2)
+    00c3: OP_return_undef
+    00c4: OP_get_loc_check     loc_6
+    00c7: OP_get_field2        atom:"readUtf8String"
+    00cc: OP_call_method       argc=0
+    00cf: OP_put_loc8          loc_7
+    00d1: OP_get_loc_check     loc_4
+    00d4: OP_call0
+    00d5: OP_put_loc8          loc_8
+    00d7: OP_get_loc_check     loc_8
+    00da: OP_push_0
+    00db: OP_eq
+    00dc: OP_if_false8         00e0 (offset +2)
+    00de: OP_return_undef
+    00df: OP_get_loc_check     loc_5
+    00e2: OP_call0
+    00e3: OP_put_loc8          loc_9
+    00e5: OP_get_loc_check     loc_9
+    00e8: OP_get_field2        atom:"isNull"
+    00ed: OP_call_method       argc=0
+    00f0: OP_if_false8         00f4 (offset +2)
+    00f2: OP_return_undef
+    00f3: OP_get_loc_check     loc_9
+    00f6: OP_get_field2        atom:"readByteArray"
+    00fb: OP_get_loc_check     loc_8
+    00fe: OP_call_method       argc=1
+    0101: OP_put_loc8          loc_10
+    0103: OP_get_var           atom:"SqliteDatabase"
+    0108: OP_get_field2        atom:"open"
+    010d: OP_get_loc_check     loc_7
+    0110: OP_push_atom_value   atom:"/wildcat.db"
+    0115: OP_add
+    0116: OP_object
+    0117: OP_push_atom_value   atom:"readwrite"
+    011c: OP_push_atom_value   atom:"create"
+    0121: OP_array_from        argc=2
+    0124: OP_define_field      atom:<predef_111>
+    0129: OP_call_method       argc=2
+    012c: OP_put_loc8          loc_11
+    012e: OP_get_loc_check     loc_11
+    0131: OP_get_field2        atom:<predef_136>
+    0136: OP_push_atom_value   atom:"\n\t\tCREATE TABLE IF NOT EXISTS scripts(\n\t\t\tscript_name TEXT PRIMARY KEY NOT NULL,\n\t\t\tdata BLOB NOT NULL\n\t\t)\n\t"
+    013b: OP_call_method       argc=1
+    013e: OP_drop
+    013f: OP_get_loc_check     loc_11
+    0142: OP_get_field2        atom:"prepare"
+    0147: OP_push_atom_value   atom:"REPLACE INTO scripts (script_name, data) VALUES(?, ?)"
+    014c: OP_call_method       argc=1
+    014f: OP_put_loc8          loc_12
+    0151: OP_get_loc_check     loc_12
+    0154: OP_get_field2        atom:"bindText"
+    0159: OP_push_1
+    015a: OP_push_atom_value   atom:"wildcat4.1_nullsroyale.rel.free_15.535.13_release"
+    015f: OP_call_method       argc=2
+    0162: OP_drop
+    0163: OP_get_loc_check     loc_12
+    0166: OP_get_field2        atom:"bindBlob"
+    016b: OP_push_2
+    016c: OP_get_loc_check     loc_10
+    016f: OP_call_method       argc=2
+    0172: OP_drop
+    0173: OP_get_loc_check     loc_12
+    0176: OP_get_field2        atom:"step"
+    017b: OP_call_method       argc=0
+    017e: OP_drop
+    017f: OP_get_loc_check     loc_11
+    0182: OP_get_field2        atom:"close"
+    0187: OP_call_method       argc=0
+    018a: OP_drop
+    018b: OP_get_var           atom:"console"
+    0190: OP_get_field2        atom:"log"
+    0195: OP_push_atom_value   atom:"cache test done"
+    019a: OP_call_method       argc=1
+    019d: OP_return_undef
+
+================================================================================
+FUNCTION [24] atom:null
+  file offset:        5640 (0x1608)
+  js_mode:            0x0642
+  has_prototype:      1
+  arg_count:          1
+  var_count:          0
+  defined_arg_count:  1
+  stack_size:         3
+  closure_var_count:  1
+  cpool_count:        1
+  byte_code_len:      42
+  bytecode offset:    5662 (0x161e)
+  cpool offset:       5708 (0x164c)
+  closure_vars:
+    [0] atom:"t" (var_idx=1, flags=0x09)
+  cpool entries:
+    [0] (float) 4294967295.0
+  bytecode disassembly:
+    0000: OP_get_arg0
+    0001: OP_get_field2        atom:"readPointer"
+    0006: OP_call_method       argc=0
+    0009: OP_get_field2        atom:"and"
+    000e: OP_push_const8       cpool[0] (4294967295.0)
+    0010: OP_call_method       argc=1
+    0013: OP_get_field2        atom:"shr"
+    0018: OP_push_i8           16
+    001a: OP_call_method       argc=1
+    001d: OP_get_field2        atom:"toUInt32"
+    0022: OP_call_method       argc=0
+    0025: OP_dup
+    0026: OP_put_var_ref_check var_ref_0 (atom:"t")
+    0029: OP_return_undef
+
+================================================================================
+FUNCTION [25] atom:null
+  file offset:        5787 (0x169b)
+  js_mode:            0x0642
+  has_prototype:      1
+  arg_count:          0
+  var_count:          1
+  defined_arg_count:  0
+  stack_size:         5
+  closure_var_count:  1
+  cpool_count:        0
+  byte_code_len:      77
+  bytecode offset:    5809 (0x16b1)
+  cpool offset:       5890 (0x1702)
+  closure_vars:
+    [0] atom:"t" (var_idx=0, flags=0x08)
+  bytecode disassembly:
+    0000: OP_get_var_ref_check var_ref_0 (atom:"t")
+    0003: OP_push_i32          54531
+    0008: OP_eq
+    0009: OP_if_false8         004d (offset +66)
+    000b: OP_set_loc_uninitialized loc_0
+    000e: OP_get_var           atom:<predef_128>
+    0013: OP_get_field2        atom:"findExportByName"
+    0018: OP_push_atom_value   atom:"libsigchain.so"
+    001d: OP_push_atom_value   atom:"sigaction"
+    0022: OP_call_method       argc=2
+    0025: OP_put_loc0
+    0026: OP_get_loc_check     loc_0
+    0029: OP_get_field2        atom:"isNull"
+    002e: OP_call_method       argc=0
+    0031: OP_dup
+    0032: OP_if_true8          004c (offset +24)
+    0034: OP_drop
+    0035: OP_get_var           atom:"Memory"
+    003a: OP_get_field2        atom:"protect"
+    003f: OP_get_loc_check     loc_0
+    0042: OP_push_4
+    0043: OP_push_atom_value   atom:"r-x"
+    0048: OP_call_method       argc=3
+    004b: OP_drop
+    004c: OP_return_undef
+
+================================================================================
+FUNCTION [26] atom:null
+  file offset:        5890 (0x1702)
+  js_mode:            0x0642
+  has_prototype:      1
+  arg_count:          0
+  var_count:          0
+  defined_arg_count:  0
+  stack_size:         0
+  closure_var_count:  0
+  cpool_count:        0
+  byte_code_len:      1
+  bytecode offset:    5903 (0x170f)
+  cpool offset:       5908 (0x1714)
+  bytecode disassembly:
+    0000: OP_return_undef
+
+================================================================================
+FUNCTION [27] atom:null
+  file offset:        5717 (0x1655)
+  js_mode:            0x0642
+  has_prototype:      1
+  arg_count:          0
+  var_count:          0
+  defined_arg_count:  0
+  stack_size:         3
+  closure_var_count:  3
+  cpool_count:        2
+  byte_code_len:      41
+  bytecode offset:    5742 (0x166e)
+  cpool offset:       5787 (0x169b)
+  closure_vars:
+    [0] atom:"t" (var_idx=1, flags=0x09)
+    [1] atom:"E" (var_idx=0, flags=0x00)
+    [2] atom:"M" (var_idx=1, flags=0x00)
+  cpool entries:
+    [0] <func atom:null at offset 0x169b>
+    [1] <func atom:null at offset 0x1702>
+  bytecode disassembly:
+    0000: OP_get_var           atom:"console"
+    0005: OP_get_field2        atom:"log"
+    000a: OP_push_atom_value   atom:"libg.so is available"
+    000f: OP_call_method       argc=1
+    0012: OP_drop
+    0013: OP_get_var_ref1
+    0014: OP_push_atom_value   atom:"royale.server.dnull.xyz"
+    0019: OP_call1
+    001a: OP_drop
+    001b: OP_get_var_ref2
+    001c: OP_call0
+    001d: OP_drop
+    001e: OP_get_var           atom:"$armv8_armv7"
+    0023: OP_fclosure8         cpool[0] (<func atom:null>)
+    0025: OP_fclosure8         cpool[1] (<func atom:null>)
+    0027: OP_call2
+    0028: OP_return_undef
+
+================================================================================
+FUNCTION [28] atom:null
+  file offset:        5908 (0x1714)
+  js_mode:            0x0643
+  has_prototype:      1
+  arg_count:          1
+  var_count:          0
+  defined_arg_count:  1
+  stack_size:         3
+  closure_var_count:  3
+  cpool_count:        0
+  byte_code_len:      53
+  bytecode offset:    5938 (0x1732)
+  cpool offset:       5995 (0x176b)
+  closure_vars:
+    [0] atom:"o" (var_idx=4, flags=0x09)
+    [1] atom:"r" (var_idx=3, flags=0x09)
+    [2] atom:"n" (var_idx=2, flags=0x09)
+  bytecode disassembly:
+    0000: OP_get_var           atom:<predef_128>
+    0005: OP_get_field2        atom:"findBaseAddress"
+    000a: OP_push_atom_value   atom:"libg.so"
+    000f: OP_call_method       argc=1
+    0012: OP_dup
+    0013: OP_if_false8         0035 (offset +32)
+    0015: OP_drop
+    0016: OP_get_var_ref_check var_ref_0 (atom:"o")
+    0019: OP_get_field2        atom:"detach"
+    001e: OP_call_method       argc=0
+    0021: OP_drop
+    0022: OP_get_var_ref_check var_ref_1 (atom:"r")
+    0025: OP_dup
+    0026: OP_if_true8          0035 (offset +13)
+    0028: OP_drop
+    0029: OP_push_0
+    002a: OP_lnot
+    002b: OP_dup
+    002c: OP_put_var_ref_check var_ref_1 (atom:"r")
+    002f: OP_drop
+    0030: OP_get_var_ref_check var_ref_2 (atom:"n")
+    0033: OP_call0
+    0034: OP_return_undef
+
+================================================================================
+FUNCTION [29] atom:null
+  file offset:        5995 (0x176b)
+  js_mode:            0x0643
+  has_prototype:      1
+  arg_count:          1
+  var_count:          0
+  defined_arg_count:  1
+  stack_size:         3
+  closure_var_count:  3
+  cpool_count:        0
+  byte_code_len:      53
+  bytecode offset:    6025 (0x1789)
+  cpool offset:       6082 (0x17c2)
+  closure_vars:
+    [0] atom:"i" (var_idx=5, flags=0x09)
+    [1] atom:"r" (var_idx=3, flags=0x09)
+    [2] atom:"n" (var_idx=2, flags=0x09)
+  bytecode disassembly:
+    0000: OP_get_var           atom:<predef_128>
+    0005: OP_get_field2        atom:"findBaseAddress"
+    000a: OP_push_atom_value   atom:"libg.so"
+    000f: OP_call_method       argc=1
+    0012: OP_dup
+    0013: OP_if_false8         0035 (offset +32)
+    0015: OP_drop
+    0016: OP_get_var_ref_check var_ref_0 (atom:"i")
+    0019: OP_get_field2        atom:"detach"
+    001e: OP_call_method       argc=0
+    0021: OP_drop
+    0022: OP_get_var_ref_check var_ref_1 (atom:"r")
+    0025: OP_dup
+    0026: OP_if_true8          0035 (offset +13)
+    0028: OP_drop
+    0029: OP_push_0
+    002a: OP_lnot
+    002b: OP_dup
+    002c: OP_put_var_ref_check var_ref_1 (atom:"r")
+    002f: OP_drop
+    0030: OP_get_var_ref_check var_ref_2 (atom:"n")
+    0033: OP_call0
+    0034: OP_return_undef
+
+================================================================================
+FUNCTION [30] atom:null
+  file offset:        6082 (0x17c2)
+  js_mode:            0x0642
+  has_prototype:      1
+  arg_count:          0
+  var_count:          0
+  defined_arg_count:  0
+  stack_size:         3
+  closure_var_count:  3
+  cpool_count:        0
+  byte_code_len:      68
+  bytecode offset:    6107 (0x17db)
+  cpool offset:       6179 (0x1823)
+  closure_vars:
+    [0] atom:"a" (var_idx=6, flags=0x09)
+    [1] atom:"r" (var_idx=3, flags=0x09)
+    [2] atom:"n" (var_idx=2, flags=0x09)
+  bytecode disassembly:
+    0000: OP_get_var           atom:<predef_128>
+    0005: OP_get_field2        atom:"findBaseAddress"
+    000a: OP_push_atom_value   atom:"libg.so"
+    000f: OP_call_method       argc=1
+    0012: OP_if_false8         0032 (offset +30)
+    0014: OP_get_var           atom:"clearInterval"
+    0019: OP_get_var_ref_check var_ref_0 (atom:"a")
+    001c: OP_call1
+    001d: OP_drop
+    001e: OP_get_var_ref_check var_ref_1 (atom:"r")
+    0021: OP_dup
+    0022: OP_if_true8          0044 (offset +32)
+    0024: OP_drop
+    0025: OP_push_0
+    0026: OP_lnot
+    0027: OP_dup
+    0028: OP_put_var_ref_check var_ref_1 (atom:"r")
+    002b: OP_drop
+    002c: OP_get_var_ref_check var_ref_2 (atom:"n")
+    002f: OP_call0
+    0030: OP_return_undef
+    0031: OP_get_var           atom:"console"
+    0036: OP_get_field2        atom:"log"
+    003b: OP_push_atom_value   atom:"interval check: libg.so is not available yet"
+    0040: OP_call_method       argc=1
+    0043: OP_return_undef
+
+================================================================================
+FUNCTION [31] atom:null
+  file offset:        6179 (0x1823)
+  js_mode:            0x0642
+  has_prototype:      1
+  arg_count:          0
+  var_count:          0
+  defined_arg_count:  0
+  stack_size:         4
+  closure_var_count:  1
+  cpool_count:        0
+  byte_code_len:      38
+  bytecode offset:    6196 (0x1834)
+  cpool offset:       6238 (0x185e)
+  closure_vars:
+    [0] atom:"P" (var_idx=2, flags=0x00)
+  bytecode disassembly:
+    0000: OP_catch             000e (offset +9)
+    0005: OP_get_var_ref0
+    0006: OP_call0
+    0007: OP_drop
+    0008: OP_drop
+    0009: OP_return_undef
+    000a: OP_drop
+    000b: OP_catch             0029 (offset +25)
+    0010: OP_get_var           atom:"console"
+    0015: OP_get_field2        atom:"log"
+    001a: OP_push_atom_value   atom:"test_cache_impl failed"
+    001f: OP_call_method       argc=1
+    0022: OP_drop
+    0023: OP_drop
+    0024: OP_return_undef
+    0025: OP_throw
+
+================================================================================
+FUNCTION [32] atom:"B"
+  file offset:        5289 (0x14a9)
+  js_mode:            0x0643
+  has_prototype:      1
+  arg_count:          0
+  var_count:          7
+  defined_arg_count:  0
+  stack_size:         7
+  closure_var_count:  3
+  cpool_count:        6
+  byte_code_len:      285
+  bytecode offset:    5351 (0x14e7)
+  cpool offset:       5640 (0x1608)
+  closure_vars:
+    [0] atom:"E" (var_idx=2, flags=0x01)
+    [1] atom:"M" (var_idx=4, flags=0x01)
+    [2] atom:"P" (var_idx=5, flags=0x01)
+  cpool entries:
+    [0] <func atom:null at offset 0x1608>
+    [1] <func atom:null at offset 0x1655>
+    [2] <func atom:null at offset 0x1714>
+    [3] <func atom:null at offset 0x176b>
+    [4] <func atom:null at offset 0x17c2>
+    [5] <func atom:null at offset 0x1823>
+  bytecode disassembly:
+    0000: OP_set_loc_uninitialized loc_3
+    0003: OP_set_loc_uninitialized loc_2
+    0006: OP_set_loc_uninitialized loc_1
+    0009: OP_set_loc_uninitialized loc_0
+    000c: OP_get_var           atom:"console"
+    0011: OP_get_field2        atom:"log"
+    0016: OP_get_var           atom:"Process"
+    001b: OP_get_field         atom:"arch"
+    0020: OP_call_method       argc=1
+    0023: OP_drop
+    0024: OP_get_var           atom:<predef_128>
+    0029: OP_get_field2        atom:"findExportByName"
+    002e: OP_push_atom_value   atom:"libc.so"
+    0033: OP_push_atom_value   atom:"__cxa_atexit"
+    0038: OP_call_method       argc=2
+    003b: OP_put_loc0
+    003c: OP_null
+    003d: OP_put_loc1
+    003e: OP_catch             0067 (offset +36)
+    0043: OP_get_var           atom:"Memory"
+    0048: OP_get_field2        atom:"patchCode"
+    004d: OP_get_loc_check     loc_0
+    0050: OP_get_var           atom:"Process"
+    0055: OP_get_field         atom:"pointerSize"
+    005a: OP_fclosure8         cpool[0] (<func atom:null>)
+    005c: OP_call_method       argc=3
+    005f: OP_drop
+    0060: OP_drop
+    0061: OP_goto8             006e (offset +11)
+    0063: OP_drop
+    0064: OP_catch             0070 (offset +7)
+    0069: OP_drop
+    006a: OP_goto8             006e (offset +2)
+    006c: OP_throw
+    006d: OP_fclosure8         cpool[1] (<func atom:null>)
+    006f: OP_set_name          atom:"n"
+    0074: OP_put_loc2
+    0075: OP_push_1
+    0076: OP_lnot
+    0077: OP_put_loc3
+    0078: OP_catch             009e (offset +33)
+    007d: OP_set_loc_uninitialized loc_4
+    0080: OP_get_var           atom:"Interceptor"
+    0085: OP_get_field2        atom:"attach"
+    008a: OP_get_loc_check     loc_0
+    008d: OP_fclosure8         cpool[2] (<func atom:null>)
+    008f: OP_call_method       argc=2
+    0092: OP_put_loc8          loc_4
+    0094: OP_close_loc         loc_4
+    0097: OP_drop
+    0098: OP_goto8             0112 (offset +120)
+    009a: OP_drop
+    009b: OP_catch             0114 (offset +116)
+    00a0: OP_get_var           atom:"console"
+    00a5: OP_get_field2        atom:"log"
+    00aa: OP_push_atom_value   atom:"failed to set interceptor at JUMP_IN_PTR, trying to fall back to JUMP_IN_PTR + 4"
+    00af: OP_call_method       argc=1
+    00b2: OP_drop
+    00b3: OP_catch             00e2 (offset +42)
+    00b8: OP_set_loc_uninitialized loc_5
+    00bb: OP_get_var           atom:"Interceptor"
+    00c0: OP_get_field2        atom:"attach"
+    00c5: OP_get_loc_check     loc_0
+    00c8: OP_get_field2        atom:<predef_106>
+    00cd: OP_push_4
+    00ce: OP_call_method       argc=1
+    00d1: OP_fclosure8         cpool[3] (<func atom:null>)
+    00d3: OP_call_method       argc=2
+    00d6: OP_put_loc8          loc_5
+    00d8: OP_close_loc         loc_5
+    00db: OP_drop
+    00dc: OP_goto8             010e (offset +48)
+    00de: OP_drop
+    00df: OP_catch             0110 (offset +44)
+    00e4: OP_set_loc_uninitialized loc_6
+    00e7: OP_get_var           atom:"console"
+    00ec: OP_get_field2        atom:"log"
+    00f1: OP_push_atom_value   atom:"failed to set interceptor at JUMP_IN_PTR + 4, falling back to interval check"
+    00f6: OP_call_method       argc=1
+    00f9: OP_drop
+    00fa: OP_get_var           atom:"setInterval"
+    00ff: OP_fclosure8         cpool[4] (<func atom:null>)
+    0101: OP_push_i8           50
+    0103: OP_call2
+    0104: OP_put_loc8          loc_6
+    0106: OP_close_loc         loc_6
+    0109: OP_drop
+    010a: OP_goto8             010e (offset +2)
+    010c: OP_throw
+    010d: OP_drop
+    010e: OP_goto8             0112 (offset +2)
+    0110: OP_throw
+    0111: OP_get_var           atom:"setTimeout"
+    0116: OP_fclosure8         cpool[5] (<func atom:null>)
+    0118: OP_push_i16          15000
+    011b: OP_call2
+    011c: OP_return_undef
+
+================================================================================
+FUNCTION [33] atom:null
+  file offset:        2376 (0x0948)
+  js_mode:            0x0602
+  has_prototype:      1
+  arg_count:          2
+  var_count:          7
+  defined_arg_count:  2
+  stack_size:         2
+  closure_var_count:  1
+  cpool_count:        5
+  byte_code_len:      36
+  bytecode offset:    2438 (0x0986)
+  cpool offset:       2481 (0x09b1)
+  closure_vars:
+    [0] atom:"_" (var_idx=2, flags=0x00)
+  cpool entries:
+    [0] <func atom:"v" at offset 0x09b1>
+    [1] <func atom:"E" at offset 0x0b4b>
+    [2] <func atom:"M" at offset 0x0ead>
+    [3] <func atom:"P" at offset 0x12b3>
+    [4] <func atom:"B" at offset 0x14a9>
+  bytecode disassembly:
+    0000: OP_fclosure8         cpool[0] (<func atom:"v">)
+    0002: OP_put_loc1
+    0003: OP_fclosure8         cpool[1] (<func atom:"E">)
+    0005: OP_put_loc2
+    0006: OP_fclosure8         cpool[2] (<func atom:"M">)
+    0008: OP_put_loc8          loc_4
+    000a: OP_fclosure8         cpool[3] (<func atom:"P">)
+    000c: OP_put_loc8          loc_5
+    000e: OP_fclosure8         cpool[4] (<func atom:"B">)
+    0010: OP_put_loc8          loc_6
+    0012: OP_get_var_ref0
+    0013: OP_call0
+    0014: OP_drop
+    0015: OP_object
+    0016: OP_put_loc0
+    0017: OP_array_from        argc=0
+    001a: OP_put_loc3
+    001b: OP_get_arg1
+    001c: OP_get_loc8          loc_6
+    001e: OP_put_field         atom:"exports"
+    0023: OP_return_undef
+
+================================================================================
+FUNCTION [34] atom:"I"
+  file offset:        6238 (0x185e)
+  js_mode:            0x0643
+  has_prototype:      1
+  arg_count:          1
+  var_count:          3
+  defined_arg_count:  1
+  stack_size:         7
+  closure_var_count:  0
+  cpool_count:        0
+  byte_code_len:      110
+  bytecode offset:    6272 (0x1880)
+  cpool offset:       6386 (0x18f2)
+  bytecode disassembly:
+    0000: OP_set_loc_uninitialized loc_1
+    0003: OP_set_loc_uninitialized loc_0
+    0006: OP_get_var           atom:<predef_128>
+    000b: OP_get_field2        atom:"findExportByName"
+    0010: OP_push_atom_value   atom:"libwildcat.so"
+    0015: OP_push_atom_value   atom:"wildcat_release_blocking"
+    001a: OP_call_method       argc=2
+    001d: OP_put_loc0
+    001e: OP_get_var           atom:"NativeFunction"
+    0023: OP_dup
+    0024: OP_get_loc_check     loc_0
+    0027: OP_push_atom_value   atom:"int"
+    002c: OP_push_atom_value   atom:"pointer"
+    0031: OP_array_from        argc=1
+    0034: OP_object
+    0035: OP_push_atom_value   atom:"propagate"
+    003a: OP_define_field      atom:"exceptions"
+    003f: OP_call_constructor  argc=4
+    0042: OP_put_loc1
+    0043: OP_get_arg0
+    0044: OP_null
+    0045: OP_neq
+    0046: OP_if_false8         0064 (offset +28)
+    0048: OP_set_loc_uninitialized loc_2
+    004b: OP_get_var           atom:"Memory"
+    0050: OP_get_field2        atom:"allocUtf8String"
+    0055: OP_get_arg0
+    0056: OP_call_method       argc=1
+    0059: OP_put_loc2
+    005a: OP_get_loc_check     loc_1
+    005d: OP_get_loc_check     loc_2
+    0060: OP_call1
+    0061: OP_drop
+    0062: OP_return_undef
+    0063: OP_get_loc_check     loc_1
+    0066: OP_get_var           atom:"NULL"
+    006b: OP_call1
+    006c: OP_drop
+    006d: OP_return_undef
+
+================================================================================
+FUNCTION [35] atom:"L"
+  file offset:        6386 (0x18f2)
+  js_mode:            0x0643
+  has_prototype:      1
+  arg_count:          0
+  var_count:          2
+  defined_arg_count:  0
+  stack_size:         3
+  closure_var_count:  3
+  cpool_count:        0
+  byte_code_len:      63
+  bytecode offset:    6422 (0x1916)
+  cpool offset:       6489 (0x1959)
+  closure_vars:
+    [0] atom:"x" (var_idx=3, flags=0x00)
+    [1] atom:"w" (var_idx=4, flags=0x00)
+    [2] atom:"I" (var_idx=5, flags=0x00)
+  bytecode disassembly:
+    0000: OP_set_loc_uninitialized loc_0
+    0003: OP_null
+    0004: OP_put_loc0
+    0005: OP_catch             0018 (offset +14)
+    000a: OP_get_var_ref0
+    000b: OP_call0
+    000c: OP_drop
+    000d: OP_get_var_ref1
+    000e: OP_call0
+    000f: OP_call0
+    0010: OP_drop
+    0011: OP_drop
+    0012: OP_goto8             002a (offset +22)
+    0014: OP_put_loc1
+    0015: OP_catch             002c (offset +18)
+    001a: OP_get_loc1
+    001b: OP_get_field         atom:stack
+    0020: OP_dup
+    0021: OP_put_loc_check     loc_0
+    0024: OP_drop
+    0025: OP_drop
+    0026: OP_goto8             002a (offset +2)
+    0028: OP_throw
+    0029: OP_catch             003a (offset +12)
+    002e: OP_get_var_ref2
+    002f: OP_get_loc_check     loc_0
+    0032: OP_call1
+    0033: OP_drop
+    0034: OP_drop
+    0035: OP_return_undef
+    0036: OP_drop
+    0037: OP_catch             0042 (offset +6)
+    003c: OP_drop
+    003d: OP_return_undef
+    003e: OP_throw
+
+================================================================================
+FUNCTION [36] <root_module>
+  file offset:        1918 (0x077e)
+  js_mode:            0x0620
+  has_prototype:      1
+  arg_count:          0
+  var_count:          0
+  defined_arg_count:  0
+  stack_size:         2
+  closure_var_count:  7
+  cpool_count:        7
+  byte_code_len:      57
+  bytecode offset:    1960 (0x07a8)
+  cpool offset:       2026 (0x07ea)
+  closure_vars:
+    [0] atom:"b" (var_idx=0, flags=0x01)
+    [1] atom:"u" (var_idx=1, flags=0x01)
+    [2] atom:"_" (var_idx=2, flags=0x01)
+    [3] atom:"x" (var_idx=3, flags=0x01)
+    [4] atom:"w" (var_idx=4, flags=0x01)
+    [5] atom:"I" (var_idx=5, flags=0x01)
+    [6] atom:"L" (var_idx=6, flags=0x01)
+  cpool entries:
+    [0] <func atom:null at offset 0x07ea>
+    [1] <func atom:null at offset 0x082e>
+    [2] <func atom:null at offset 0x0882>
+    [3] <func atom:null at offset 0x0894>
+    [4] <func atom:null at offset 0x0948>
+    [5] <func atom:"I" at offset 0x185e>
+    [6] <func atom:"L" at offset 0x18f2>
+  bytecode disassembly:
+    0000: OP_push_this
+    0001: OP_if_false8         000f (offset +12)
+    0003: OP_fclosure8         cpool[5] (<func atom:"I">)
+    0005: OP_put_var_ref       var_ref_5 (atom:"I")
+    0008: OP_fclosure8         cpool[6] (<func atom:"L">)
+    000a: OP_put_var_ref       var_ref_6 (atom:"L")
+    000d: OP_return_undef
+    000e: OP_fclosure8         cpool[0] (<func atom:null>)
+    0010: OP_set_name          atom:"b"
+    0015: OP_put_var_ref0
+    0016: OP_fclosure8         cpool[1] (<func atom:null>)
+    0018: OP_set_name          atom:"u"
+    001d: OP_put_var_ref1
+    001e: OP_get_var_ref0
+    001f: OP_fclosure8         cpool[2] (<func atom:null>)
+    0021: OP_call1
+    0022: OP_put_var_ref2
+    0023: OP_get_var_ref1
+    0024: OP_fclosure8         cpool[3] (<func atom:null>)
+    0026: OP_call1
+    0027: OP_put_var_ref3
+    0028: OP_get_var_ref1
+    0029: OP_fclosure8         cpool[4] (<func atom:null>)
+    002b: OP_call1
+    002c: OP_put_var_ref       var_ref_4 (atom:"w")
+    002f: OP_get_var_ref2
+    0030: OP_call0
+    0031: OP_drop
+    0032: OP_get_var_ref       var_ref_6 (atom:"L")
+    0035: OP_call0
+    0036: OP_drop
+    0037: OP_undefined
+    0038: OP_return_async
+
